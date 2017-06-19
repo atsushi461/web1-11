@@ -7,16 +7,16 @@ var message;
 while(a<1){
 if(answer === number){
   message = 'あたり！';
-  a=0;
+  a=1;
 }else if (answer < number){
   message = '残念！もっと大きいです';
-  a=1;
+  a=0;
 }else if (number < answer){
   message = '残念！もっと小さいです';
-  a=1;
+  a=0;
 }else{
   message = '0~3の数字を入力してください';
-  a=1;
+  a=0;
 }
 }
 document.getElementById('choice').textContent = message;
